@@ -1,4 +1,4 @@
-package Matrices;
+package matrices;
 
 import java.util.Scanner;
 
@@ -12,9 +12,9 @@ public class ExamenSerpiente {
     private static final char PARED = '#';        // Representa los bordes del tablero (las paredes)
 
     // Variables para manejar el estado del juego
-    private static char[][] tablero = new char[ALTO][ANCHO];   // Matriz que representa el tablero del juego
-    private static int[] serpienteX = new int[ANCHO * ALTO];   // Array que almacena las posiciones X del cuerpo de la serpiente
-    private static int[] serpienteY = new int[ANCHO * ALTO];   // Array que almacena las posiciones Y del cuerpo de la serpiente
+    private static final char[][] tablero = new char[ALTO][ANCHO];   // Matriz que representa el tablero del juego
+    private static final int[] serpienteX = new int[ANCHO * ALTO];   // Array que almacena las posiciones X del cuerpo de la serpiente
+    private static final int[] serpienteY = new int[ANCHO * ALTO];   // Array que almacena las posiciones Y del cuerpo de la serpiente
     private static int longitudSerpiente = 1;                  // Longitud actual de la serpiente (inicialmente es de 1)
     private static int comidaX, comidaY;                       // Coordenadas de la comida en el tablero
     private static int puntuacion = 0;                         // Contador de la puntuación del jugador
